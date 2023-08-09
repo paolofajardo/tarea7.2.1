@@ -18,6 +18,19 @@ function showData(dataObject) {
     container.innerHTML += `<p> ${student.name} ${student.lastname} </p>`;
   }
 }
+/*  Otra solucion
+ function showData(dataArray) {
+  // El for itera sobre los elementos del array
+  for (const item of dataArray) {
+    // En la siguiente línea se utilizan "backticks" para armar el String. Más info => https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals
+    container.innerHTML += `<p> ${item.name} ${item.lastname} </p>`; // Se concatena cada párrafo de la manera que queremos mostrarlo al innerHTML del contenedor
+  }
+} 
+fetch(DATA_URL) 
+.then(response => response.json()) 
+.then(data => { let students = data.students; 
+  showData(students); })
+  */ 
 
 // Escribe el código necesario para realizar el fetch al archivo con los datos y mostrar los estudiantes con la función showData
 fetch(DATA_URL)
