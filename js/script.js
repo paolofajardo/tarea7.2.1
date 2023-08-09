@@ -28,8 +28,9 @@ function showData(dataObject) {
 } 
 fetch(DATA_URL) 
 .then(response => response.json()) 
-.then(data => { let students = data.students; 
-  showData(students); })
+.then(data => {
+      showData(data.students);
+    })
   */ 
 
 // Escribe el código necesario para realizar el fetch al archivo con los datos y mostrar los estudiantes con la función showData
